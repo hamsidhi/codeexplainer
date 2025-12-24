@@ -1,0 +1,175 @@
+# CodeExplainer Default Configuration
+# This file contains the default settings for the CodeExplainer tool
+
+# Analysis settings
+analysis:
+  # Maximum file size to analyze (in MB)
+  max_file_size_mb: 10
+  
+  # Timeout for analyzing a single file (in seconds)
+  timeout_seconds: 30
+  
+  # Override automatic language detection (set to null to disable)
+  override_language: null
+  
+  # Include comments in analysis
+  include_comments: true
+  
+  # Include docstrings in analysis
+  include_docstrings: true
+  
+  # Maximum number of files to analyze (null = unlimited)
+  max_files: null
+
+# Output settings
+output:
+  # Generate audio scripts optimized for text-to-speech
+  generate_audio_scripts: true
+  
+  # Style of explanations (simple, detailed, technical)
+  explanation_style: "simple"
+  
+  # Include line numbers in explanations
+  include_line_numbers: false
+  
+  # Maximum length of explanations (in characters)
+  max_explanation_length: 2000
+  
+  # Create project summary file
+  create_project_summary: true
+  
+  # Organize explanations by file type
+  group_by_type: true
+
+# File filtering settings
+file_filters:
+  # File patterns to include (empty = include all)
+  include_patterns: []
+  
+  # File patterns to exclude
+  exclude_patterns:
+    # Version control
+    - ".git"
+    - ".gitignore"
+    - ".gitattributes"
+    - ".svn"
+    - ".hg"
+    
+    # Python
+    - "__pycache__"
+    - "*.pyc"
+    - "*.pyo"
+    - "*.pyd"
+    - ".pytest_cache"
+    - ".coverage"
+    - "htmlcov"
+    - "*.egg-info"
+    - "dist"
+    - "build"
+    - ".eggs"
+    - "venv"
+    - ".venv"
+    - "env"
+    - ".env"
+    
+    # Node.js
+    - "node_modules"
+    - ".npm"
+    - ".yarn"
+    - "package-lock.json"
+    - "yarn.lock"
+    
+    # Java
+    - "target"
+    - ".gradle"
+    - "build"
+    
+    # IDE and Editor files
+    - ".idea"
+    - ".vscode"
+    - ".vs"
+    - "*.swp"
+    - "*.swo"
+    - "*~"
+    - ".DS_Store"
+    - "Thumbs.db"
+    
+    # Documentation build
+    - "_build"
+    - "_site"
+    - ".tox"
+    
+    # Temporary and backup files
+    - "*.tmp"
+    - "*.temp"
+    - "*.bak"
+    - "*.backup"
+    
+    # Compiled binaries
+    - "*.exe"
+    - "*.dll"
+    - "*.so"
+    - "*.dylib"
+    - "*.bin"
+    - "*.dat"
+    - "*.o"
+    - "*.obj"
+    
+    # Media and binary assets
+    - "*.jpg"
+    - "*.jpeg"
+    - "*.png"
+    - "*.gif"
+    - "*.bmp"
+    - "*.mp3"
+    - "*.mp4"
+    - "*.avi"
+    - "*.mov"
+    - "*.wav"
+    - "*.zip"
+    - "*.tar"
+    - "*.gz"
+    - "*.rar"
+    - "*.7z"
+    - "*.pdf"
+    - "*.doc"
+    - "*.docx"
+    - "*.xls"
+    - "*.xlsx"
+    
+    # Logs and databases
+    - "*.log"
+    - "*.sqlite"
+    - "*.db"
+    - "*.mdb"
+  
+  # Maximum directory depth to traverse (null = unlimited)
+  max_depth: null
+  
+  # Skip hidden files and directories
+  skip_hidden: true
+
+# Template settings
+templates:
+  # Use custom templates
+  use_custom_templates: false
+  
+  # Directory containing custom templates
+  template_directory: null
+
+# Logging settings
+logging:
+  # Log level (DEBUG, INFO, WARNING, ERROR, CRITICAL)
+  level: "INFO"
+  
+  # Log format
+  format: "{time:HH:mm:ss} | {level: <8} | {message}"
+  
+  # Log file (null = no file logging)
+  file: null
+  
+  # Maximum log file size (in MB)
+  max_file_size: 10
+  
+  # Number of backup log files
+  backup_count: 3

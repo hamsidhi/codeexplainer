@@ -1,0 +1,42 @@
+# CodeExplainer - Production Requirements
+# No paid APIs, no credentials, 100% open-source
+
+# Core dependencies
+click>=8.0.0          # Command-line interface
+tree-sitter>=0.20.0    # Syntax parsing for multiple languages
+tree-sitter-python>=0.20.0
+tree-sitter-java>=0.20.0
+tree-sitter-javascript>=0.20.0
+tree-sitter-typescript>=0.20.0
+tree-sitter-c>=0.20.0
+tree-sitter-cpp>=0.20.0
+tree-sitter-go>=0.20.0
+tree-sitter-rust>=0.20.0
+tree-sitter-ruby>=0.20.0
+tree-sitter-php>=0.20.0
+
+# Language detection
+pygments>=2.10.0       # Syntax highlighting and language detection
+
+# File and path utilities
+pathspec>=0.9.0        # Git-style file pattern matching
+python-magic>=0.4.24   # File type detection
+
+# Text processing
+jinja2>=3.0.0          # Template engine for explanations
+nltk>=3.6.0            # Natural language processing
+
+# Audio script optimization
+num2words>=0.5.10      # Convert numbers to words for TTS
+
+# Configuration and logging
+pyyaml>=6.0            # YAML configuration files
+rich>=10.0.0           # Rich terminal output
+loguru>=0.6.0          # Logging
+
+# Development dependencies (optional)
+pytest>=7.0.0          # Testing
+pytest-cov>=4.0.0      # Coverage reporting
+black>=22.0.0          # Code formatting
+flake8>=5.0.0          # Linting
+mypy>=0.991            # Type checking
