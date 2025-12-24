@@ -153,20 +153,3 @@ codeexplainer /path/to/project
 
 ![Demo](demo.gif) <!-- Add your demo GIF here! -->
 ```
-
-## 🚀 **FINAL STEPS:**
-
-```powershell
-# 1. Update README
-# (paste above content)
-
-# 2. Commit + Push
-git add README.md
-git commit -m "✨ Perfect README.md with badges + demo + tools"
-git push origin main
-
-# 3. Add demo GIF (record screen)
-# 4. Create v1.0.0 release
-git tag v1.0.0
-git push origin v1.0.0
-```
